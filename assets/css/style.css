@@ -5,8 +5,10 @@ body {
     height: 100vh;
 }
 
-img {
-    width: 200px;
+#my-pic {
+    width: 250px;
+    border-radius: 150px;
+    box-shadow: 1px 1px 5px white;
 }
 
 #title {
@@ -153,5 +155,11 @@ img {
     }
     .header {
         margin-top: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        color: black;
     }
 }
