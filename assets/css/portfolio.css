@@ -1,0 +1,16 @@
+.bottom-row {
+    margin-top: 20px;
+}
+
+.top-row {
+    margin-top: 100px;
+}
+
+.card {
+    background: none;
+}
+
+.project-title {
+    font-size: 30px;
+    font-weight: bolder;
+}
