@@ -2,8 +2,6 @@ var navButton = document.querySelector(".navigation-button");
 var navMenu = document.querySelector(".navigation-menu");
 var win = window;
 
-console.log(win);
-
 function openMenu(event) {
 
     navButton.classList.toggle("active");
@@ -14,8 +12,6 @@ function openMenu(event) {
 }
 
 function closeMenu(event) {
-    console.log("here");
-    event.preventDefault()
     if (navButton.classList.contains("active")) {
         navButton.classList.remove("active");
         navMenu.classList.remove("active");
