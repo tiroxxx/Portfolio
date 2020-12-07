@@ -36,10 +36,6 @@ body {
     position: relative;
 }
 
-/* .navigation-wrapper {
-    position: relative;
-} */
-
 .navigation-button {
     will-change: transform;
     display: flex;
@@ -154,7 +150,7 @@ body {
         width: 150px;
     }
     #title {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .description {
