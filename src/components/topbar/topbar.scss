@@ -10,6 +10,10 @@
   z-index: 5;
   transition: all 1s ease;
 
+  @include mobile{
+      height: 50px;
+  }
+
   .wrapper {
     padding: 10px 30px;
     display: flex;
@@ -26,12 +30,20 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+
+        @include mobile{
+          font-size: 25px;
+        }
       }
 
       .itemContainer {
         display: flex;
         align-items: center;
         margin-left: 30px;
+
+        @include mobile{
+          display: none;
+        }
 
         .icon {
           font-size: 18px;
