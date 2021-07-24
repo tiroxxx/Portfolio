@@ -7,7 +7,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            Christian Marquez
+            Christian M.
           </a>
           <div className="itemContainer">
             <Person className="icon" />
