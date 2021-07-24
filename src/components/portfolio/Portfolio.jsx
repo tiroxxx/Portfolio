@@ -1,35 +1,63 @@
 import './portfolio.scss';
+import PortfolioList from '../portfolioList/PortfolioList';
+import { useState, useEffect } from 'react';
+import { featuredPortfolio, team, own } from '../../data';
 
 export default function Portfolio() {
+  const [selected, setSelected] = useState('featured');
+  const [data, setData] = useState([]);
+
+  const list = [
+    {
+      id: 'featured',
+      title: 'Featured',
+    },
+    {
+      id: 'team',
+      title: 'Team',
+    },
+    {
+      id: 'own',
+      title: 'Own',
+    },
+  ];
+
+  useEffect(() => {
+    switch (selected) {
+      case 'featured':
+        setData(featuredPortfolio);
+        break;
+      case 'team':
+        setData(team);
+        break;
+      case 'own':
+        setData(own);
+        break;
+      default:
+        setData(featuredPortfolio);
+    }
+  }, [selected]);
+
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <ul>
-        <li className="active">Featured</li>
-        <li>Team</li>
-        <li>Own</li>
+        {list.map((item) => (
+          <PortfolioList
+            title={item.title}
+            active={selected === item.id}
+            setSelected={setSelected}
+            id={item.id}
+          />
+        ))}
       </ul>
       <div className="container">
-        <div className="item">
-          <img src="./assets/SubAway.PNG" alt="SubAway" />
-          <h3>SubAway</h3>
-        </div>
-        <div className="item">
-          <img src="./assets/wine&dines.JPG" alt="Wine&Dines" />
-          <h3>Wine&Dines</h3>
-        </div>
-        <div className="item">
-          <img src="./assets/spotify-lyrical.png" alt="Spotify Lyrical" />
-          <h3>Spotify Lyrical</h3>
-        </div>
-        <div className="item">
-          <img src="./assets/personal-cloud.png" alt="Personal Cloud Storage" />
-          <h3>Personal Cloud Storage</h3>
-        </div>
-        <div className="item">
-          <img src="./assets/Bookmark.PNG" alt="Bookmark" />
-          <h3>Bookmark</h3>
-        </div>
+        {data.map((d) => (
+          <div key={d.id} className="item">
+            <img src={d.img} alt={d.title} />
+            <h3>{d.title}</h3>
+          </div>
+        ))}
       </div>
     </div>
   );
