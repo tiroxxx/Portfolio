@@ -1,11 +1,11 @@
 @import '../../global.scss';
 
 .portfolio {
-  height: auto;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   
   @include mobile {
     justify-content: start;

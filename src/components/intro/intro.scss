@@ -17,7 +17,7 @@
       width: 700px;
       height: 700px;
       display: flex;
-      background-color: crimson;
+      // background-color: crimson;
       border-radius: 50%;
       align-items: center;
       justify-content: center;
@@ -48,10 +48,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: baseline;
 
       @include mobile{
         padding-left: 0;
-        // justify-content: flex-start;
         align-items: center;
       }
 
@@ -60,7 +60,7 @@
         margin: 10px 0;
 
         @include mobile{
-          font-size: 40px;
+          font-size: 30px;
         }
       }
       h2 {
@@ -105,6 +105,9 @@
 
         @include mobile{
           bottom: 0px;
+          font-size: 70px;
+          left: 50%;
+          transform: translate(-50%,0);
         }
 
       }
