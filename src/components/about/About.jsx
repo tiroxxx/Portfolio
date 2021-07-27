@@ -20,7 +20,9 @@ export default function About() {
             when they're mean I go to my uncle Stackoverflow.
           </p>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <img src="./assets/laptop.jpg" alt="Laptop" />
+        </div>
       </div>
     </div>
   );

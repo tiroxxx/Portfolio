@@ -6,7 +6,7 @@
     width: 100%;
     height: calc(100vh - 70px); /* Fallback for browsers that do not support Custom Properties */
     height: calc((var(--vh, 1vh) * 100) - 70px);
-    background-color: lightcoral;
+    background-color: black;
     position: relative;
     top: 70px;
     scroll-behavior: smooth;
