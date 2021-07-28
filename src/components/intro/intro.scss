@@ -78,14 +78,15 @@
 
       h3 {
         font-size: 30px;
+        color: crimson;
 
         @include mobile {
           font-size: 20px;
         }
 
         span {
-          font-size: inherit;
-          color: crimson;
+          font-size: 30px;
+        color: crimson;
         }
 
         .ityped-cursor {

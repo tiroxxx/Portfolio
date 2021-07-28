@@ -12,7 +12,7 @@ export default function About() {
             MongoDB is my butter.
           </p>
           <p>
-            Although the front-end is beautiful and I enjoy React, the back-end
+            Although the front end is beautiful and I enjoy React, the back end
             is where my home is.
           </p>
           <p>

@@ -6,9 +6,10 @@ export default function Contact() {
     const [message, setMessage] = useState(false)
 
     function handleSubmit(e) {
-        e.preventDefault()
         setMessage(true)
-
+        setTimeout(() => {
+            setMessage(false)
+        }, 2000)
     }
 
     return (
@@ -18,9 +19,9 @@ export default function Contact() {
             </div>
             <div className="right">
                 <h2>Contact</h2>
-                <form onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Email" />
-                    <textarea placeholder="Message"></textarea>
+                <form  action="https://formsubmit.co/christianmarquez41@gmail.com" method="POST" onSubmit={handleSubmit}>
+                    <input name="email" type="text" placeholder="Email" required/>
+                    <textarea name="message" placeholder="Message"></textarea>
                     <button type="submit">Send</button>
                     {message && <span>Thanks, I'll reply ASAP!</span>}
                 </form>
