@@ -6,6 +6,7 @@
   padding: 7px;
   border-radius: 10px;
   cursor: pointer;
+  color: whitesmoke;
 
   @include mobile{
       margin-right: 30px;
@@ -13,6 +14,5 @@
 
   &.active {
     background-color: $mainColor;
-    color: white;
   }
 }
