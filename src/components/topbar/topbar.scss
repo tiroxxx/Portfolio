@@ -48,11 +48,19 @@
         .icon {
           font-size: 18px;
           margin-right: 5px;
+
+          @include tablet {
+            display: none;
+          }
         }
 
         span {
           font-size: 15px;
           font-weight: 600;
+
+          @include tablet {
+            display: none;
+          }
         }
 
         a {
