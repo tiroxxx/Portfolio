@@ -21,6 +21,7 @@ export default function Contact() {
                 <h2>Contact</h2>
                 <form  action="https://formsubmit.co/christianmarquez41@gmail.com" method="POST" onSubmit={handleSubmit}>
                     <input name="email" type="text" placeholder="Email" required/>
+                    <input name="_next" type="hidden" value="https://portfolio-4f83f.web.app/"/>
                     <textarea name="message" placeholder="Message"></textarea>
                     <button type="submit">Send</button>
                     {message && <span>Thanks, I'll reply ASAP!</span>}
