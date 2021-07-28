@@ -2,6 +2,7 @@ import './portfolio.scss';
 import PortfolioList from '../portfolioList/PortfolioList';
 import { useState, useEffect } from 'react';
 import { featuredPortfolio, team, own } from '../../data';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 export default function Portfolio() {
   const [selected, setSelected] = useState('featured');
@@ -56,7 +57,10 @@ export default function Portfolio() {
         {data.map((d) => (
           <div key={d.id} className="item">
             <img src={d.img} alt={d.title} />
-            <h3>{d.title}</h3>
+            <a className="deployedApp" href={d.deployedApp}>{d.title}</a>
+            <a className="repo" href={d.repo}>
+              <GitHubIcon />
+            </a>
           </div>
         ))}
       </div>

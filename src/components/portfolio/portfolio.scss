@@ -58,9 +58,28 @@
         margin: 5px 10px;
       }
 
-      h3 {
+      .deployedApp {
         position: absolute;
         font-size: 20px;
+        text-decoration: none;
+        color: whitesmoke;
+
+        @include mobile{
+          top: 10px;
+          font-size: 12px;
+        }
+      }
+
+      .repo {
+        position: absolute;
+        bottom: 20px;
+        font-size: 20px;
+        text-decoration: none;
+        color: whitesmoke;
+
+        @include mobile{
+          bottom: 10px;
+        }
       }
 
       img {
