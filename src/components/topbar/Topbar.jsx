@@ -18,12 +18,12 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <span>christianmarquez41@gmail.com</span>
           </div>
           <div className="itemContainer">
-            <a href="https://www.linkedin.com/in/christian-marquez-286a211b2/">
+            <a href="https://www.linkedin.com/in/christian-marquez-286a211b2/" target="_blank">
             <i className="fab fa-linkedin"></i>
             </a>
           </div>
           <div className="itemContainer">
-            <a href="https://github.com/tiroxxx">
+            <a href="https://github.com/tiroxxx" target="_blank">
             <i className="fab fa-github"></i>
             </a>
           </div>
