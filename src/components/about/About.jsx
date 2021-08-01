@@ -12,8 +12,8 @@ export default function About() {
             MongoDB is my butter.
           </p>
           <p>
-            Although the front end is beautiful and I enjoy React, the back end
-            is where my home is.
+            Although the front end is beautiful and I like React, the back end
+            is what I enjoy the most.
           </p>
           <p>
             When in need of guidance I go to my parents Google and Youtube, but
