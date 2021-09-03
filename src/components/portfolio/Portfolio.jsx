@@ -1,7 +1,7 @@
 import './portfolio.scss';
 import PortfolioList from '../portfolioList/PortfolioList';
 import { useState, useEffect } from 'react';
-import { featuredPortfolio, team, own } from '../../data';
+import { featuredPortfolio, team, own, clones } from '../../data';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 export default function Portfolio() {
@@ -21,6 +21,10 @@ export default function Portfolio() {
       id: 'own',
       title: 'Own',
     },
+    {
+      id: 'clones',
+      title: 'Clones',
+    },
   ];
 
   useEffect(() => {
@@ -33,6 +37,9 @@ export default function Portfolio() {
         break;
       case 'own':
         setData(own);
+        break;
+      case 'clones':
+        setData(clones);
         break;
       default:
         setData(featuredPortfolio);
@@ -57,7 +64,9 @@ export default function Portfolio() {
         {data.map((d) => (
           <div key={d.id} className="item">
             <img src={d.img} alt={d.title} />
-            <a className="deployedApp" href={d.deployedApp}>{d.title}</a>
+            <a className="deployedApp" href={d.deployedApp}>
+              {d.title}
+            </a>
             <a className="repo" href={d.repo}>
               <GitHubIcon />
             </a>

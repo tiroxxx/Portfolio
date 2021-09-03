@@ -1,10 +1,10 @@
 export const featuredPortfolio = [
   {
     id: 1,
-    title: 'SubAway',
-    img: './assets/SubAway.PNG',
-    repo: 'https://github.com/irasar/SubAway',
-    deployedApp: 'https://subaway.herokuapp.com/',
+    title: 'Netflix Clone',
+    img: './assets/netflix.jpg',
+    repo: 'https://github.com/tiroxxx/Netflix-clone',
+    deployedApp: 'https://netflix-clone-cd44b.web.app/',
   },
   {
     id: 2,
@@ -15,10 +15,10 @@ export const featuredPortfolio = [
   },
   {
     id: 3,
-    title: 'Spotify Lyrical',
-    img: './assets/spotify-lyrical.png',
-    repo: 'https://github.com/tiroxxx/spotify-clone',
-    deployedApp: 'https://spotify-lyrical-59138.web.app/',
+    title: 'Disney+ Clone',
+    img: './assets/disneyplus.jpg',
+    repo: 'https://github.com/tiroxxx/disneyplus-clone',
+    deployedApp: 'https://disneyplus-clone-85288.web.app/',
   },
 ];
 
@@ -67,5 +67,36 @@ export const own = [
     img: './assets/personal-cloud.png',
     repo: 'https://github.com/tiroxxx/CloudPersonalStorage',
     deployedApp: 'https://cloud-personal-storage.web.app/login',
+  },
+  {
+    id: 3,
+    title: 'Disney+ Clone',
+    img: './assets/disneyplus.jpg',
+    repo: 'https://github.com/tiroxxx/disneyplus-clone',
+    deployedApp: 'https://disneyplus-clone-85288.web.app/',
+  },
+  {
+    id: 4,
+    title: 'Netflix Clone',
+    img: './assets/netflix.jpg',
+    repo: 'https://github.com/tiroxxx/Netflix-clone',
+    deployedApp: 'https://netflix-clone-cd44b.web.app/',
+  },
+];
+
+export const clones = [
+  {
+    id: 1,
+    title: 'Disney+ Clone',
+    img: './assets/disneyplus.jpg',
+    repo: 'https://github.com/tiroxxx/disneyplus-clone',
+    deployedApp: 'https://disneyplus-clone-85288.web.app/',
+  },
+  {
+    id: 2,
+    title: 'Netflix Clone',
+    img: './assets/netflix.jpg',
+    repo: 'https://github.com/tiroxxx/Netflix-clone',
+    deployedApp: 'https://netflix-clone-cd44b.web.app/',
   },
 ];
