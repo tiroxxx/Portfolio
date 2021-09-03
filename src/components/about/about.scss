@@ -12,26 +12,30 @@
     justify-content: center;
 
     @include mobile {
-        flex-direction: column;
+      flex-direction: column;
     }
 
     .left {
       flex: 0.5;
       display: flex;
-      font-size: 30px;
+      font-size: 25px;
       flex-direction: column;
       justify-content: center;
 
       @include mobile {
         font-size: 14px;
-        flex: 0.5;
-    }
+        flex: 0.6;
+      }
 
       p {
-          margin-bottom: 50px;
+        margin-bottom: 50px;
 
-          @include mobile {
-            margin-bottom: 20px;
+        @include tablet {
+          font-size: 20px;
+        }
+        @include mobile {
+          margin-bottom: 20px;
+          font-size: 16px;
         }
       }
     }
@@ -44,12 +48,12 @@
       align-content: center;
 
       @include mobile {
-        flex: 0.5;
-    }
+        flex: 0.4;
+      }
 
       img {
-          width: 100%;
-          object-fit: cover;
+        width: 100%;
+        object-fit: cover;
       }
     }
   }

@@ -18,12 +18,19 @@
 
   ul {
     margin: 10px;
+    width: 100%;
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
     @include mobile{
       margin: 10px 0;
+    }
+
+    li {
+      margin: 0 auto;
     }
   }
 
@@ -35,8 +42,10 @@
     flex-wrap: wrap;
 
     @include mobile {
+      margin-top: 10px;
+    }
+    @include tablet {
       width: 90%;
-      margin-top: 50px;
     }
 
     .item {
